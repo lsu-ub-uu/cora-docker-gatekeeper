@@ -1,5 +1,8 @@
 <Context>
-	<Parameter name="userPickerFactoryClassName"
-		value="se.uu.ub.cora.systemone.authentication.UserPickerFactoryImp"
-		override="false" />
+	<Parameter name="storageOnDiskBasePath" value="/mnt/data/basicstorage/"
+         override="false"/>
+    
+    <Parameter name="userPickerProviderClassName" 
+    	value="se.uu.ub.cora.systemone.authentication.UserPickerProviderImp"
+         override="false"/>
 </Context>
