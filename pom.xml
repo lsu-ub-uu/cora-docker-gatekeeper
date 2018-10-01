@@ -20,11 +20,11 @@
 
 	<artifactId>cora-docker-gatekeeper</artifactId>
 	<packaging>pom</packaging>
-	<version>0.5-SNAPSHOT</version>
+	<version>0.6-SNAPSHOT</version>
 	<name>Gatekeeper docker</name>
 
 	<properties>
-		<systemone.version>0.13-SNAPSHOT</systemone.version>
+		<systemone.version>0.14-SNAPSHOT</systemone.version>
 		<gatekeeper.version>0.3-SNAPSHOT</gatekeeper.version>
 		<basicstorage.version>0.6-SNAPSHOT</basicstorage.version>
 	</properties>
