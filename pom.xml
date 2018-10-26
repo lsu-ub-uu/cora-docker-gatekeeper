@@ -37,7 +37,7 @@
 
 		<systemone.version>0.15-SNAPSHOT</systemone.version>
 		<gatekeeper.version>0.4-SNAPSHOT</gatekeeper.version>
-		<basicstorage.version>0.7-SNAPSHOT</basicstorage.version>
+		<basicstorage.version>0.8-SNAPSHOT</basicstorage.version>
 	</properties>
 
 	<scm>
