@@ -22,20 +22,20 @@
 	<parent>
 		<groupId>se.uu.ub.cora</groupId>
 		<artifactId>cora-parent</artifactId>
-		<version>0.8.6</version>
+		<version>0.9.0</version>
 	</parent>
 
 	<artifactId>cora-docker-gatekeeper</artifactId>
 	<packaging>pom</packaging>
-	<version>0.9-SNAPSHOT</version>
+	<version>1.0-SNAPSHOT</version>
 	<name>Gatekeeper docker</name>
 
 	<properties>
 		<outputDirectory>${project.build.directory}/docker2</outputDirectory>
 
-		<systemone.version>0.20.0</systemone.version>
-		<gatekeeper.version>0.5.0</gatekeeper.version>
-		<basicstorage.version>0.12.0</basicstorage.version>
+		<gatekeeperserver.version>1.0.0</gatekeeperserver.version>
+		<userpicker.version>1.0.0</userpicker.version>
+		<basicstorage.version>1.0.0</basicstorage.version>
 	</properties>
 
 	<scm>
@@ -48,15 +48,15 @@
 	<dependencies>
 		<dependency>
 			<groupId>se.uu.ub.cora</groupId>
-			<artifactId>systemone</artifactId>
-			<version>${systemone.version}</version>
+			<artifactId>gatekeeperserver</artifactId>
+			<version>${gatekeeperserver.version}</version>
+			<type>war</type>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>se.uu.ub.cora</groupId>
-			<artifactId>gatekeeper</artifactId>
-			<version>${gatekeeper.version}</version>
-			<type>war</type>
+			<artifactId>userpicker</artifactId>
+			<version>${userpicker.version}</version>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
