@@ -2,9 +2,10 @@ FROM  tomcat:9.0-jre11-slim
 
 #COPY /storagefiles /mnt/data/basicstorage
 
-COPY /gatekeeper.war /usr/local/tomcat/webapps/gatekeeper.war
-COPY /gatekeeper.xml /usr/local/tomcat/conf/Catalina/localhost/gatekeeper.xml
-COPY /systemone.jar /usr/local/tomcat/lib/systemone.jar
+COPY /gatekeeperserver.war /usr/local/tomcat/webapps/gatekeeperserver.war
+COPY /gatekeeperserver.xml /usr/local/tomcat/conf/Catalina/localhost/gatekeeperserver.xml
+COPY /userpicker.jar /usr/local/tomcat/lib/userpicker.jar
+COPY /basicstorage.jar /usr/local/tomcat/lib/basicstorage.jar
 
 
 #build with:
