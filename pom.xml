@@ -33,9 +33,10 @@
 	<properties>
 		<outputDirectory>${project.build.directory}/docker2</outputDirectory>
 
-		<gatekeeperserver.version>1.0.0</gatekeeperserver.version>
+
+		<basicstorage.version>1.1.0</basicstorage.version>
+		<gatekeeperserver.version>1.0.1</gatekeeperserver.version>
 		<userpicker.version>1.0.0</userpicker.version>
-		<basicstorage.version>1.0.0</basicstorage.version>
 	</properties>
 
 	<scm>
@@ -105,8 +106,6 @@
 							<overWriteReleases>true</overWriteReleases>
 							<overWriteSnapshots>true</overWriteSnapshots>
 							<overWriteIfNewer>true</overWriteIfNewer>
-							<excludeTransitive>true</excludeTransitive>
-							<stripVersion>true</stripVersion>
 						</configuration>
 					</execution>
 				</executions>
