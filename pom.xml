@@ -16,7 +16,9 @@
   ~     You should have received a copy of the GNU General Public License
   ~     along with Cora.  If not, see <http://www.gnu.org/licenses />.
   -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
@@ -33,18 +35,18 @@
 	<properties>
 		<outputDirectory>${project.build.directory}/docker2</outputDirectory>
 
-
 		<basicstorage.version>1.1.0</basicstorage.version>
-		<gatekeeperserver.version>1.0.1</gatekeeperserver.version>
+		<gatekeeperserver.version>1.1.0</gatekeeperserver.version>
 		<userpicker.version>1.0.0</userpicker.version>
+		<coralog4j.version>1.0.0</coralog4j.version>
 	</properties>
 
 	<scm>
 		<connection>scm:git:https://github.com/lsu-ub-uu/cora-docker-gatekeeper.git</connection>
 		<developerConnection>scm:git:https://github.com/lsu-ub-uu/cora-docker-gatekeeper.git</developerConnection>
 		<url>https://github.com/lsu-ub-uu/cora-docker-gatekeeper.git</url>
-	  <tag>HEAD</tag>
-  </scm>
+		<tag>HEAD</tag>
+	</scm>
 
 	<dependencies>
 		<dependency>
@@ -61,10 +63,16 @@
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
-		<groupId>se.uu.ub.cora</groupId>
-		<artifactId>basicstorage</artifactId>
-		<version>${basicstorage.version}</version>
-		<scope>compile</scope>
+			<groupId>se.uu.ub.cora</groupId>
+			<artifactId>basicstorage</artifactId>
+			<version>${basicstorage.version}</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>se.uu.ub.cora</groupId>
+			<artifactId>log4j</artifactId>
+			<version>${coralog4j.version}</version>
+			<scope>compile</scope>
 		</dependency>
 	</dependencies>
 
