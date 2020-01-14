@@ -34,17 +34,7 @@
 
 	<properties>
 		<outputDirectory>${project.build.directory}/docker2</outputDirectory>
-
-		<coralog4j.version>2.0.0</coralog4j.version>
-		<storage.version>3.3.0</storage.version>
-		<searchstorage.version>3.3.0</searchstorage.version>
-		<basicstorage.version>3.4.0</basicstorage.version>
-		<gatekeeper.version>3.3.0</gatekeeper.version>
-		<gatekeeperserver.version>3.1.0</gatekeeperserver.version>
-		<userpicker.version>3.0.0</userpicker.version>
-		<coradata.version>3.3.0</coradata.version>
-		<basicdata.version>1.4.0</basicdata.version>
-		
+		<systemonegatekeeperwar.version>1.0.0</systemonegatekeeperwar.version>
 	</properties>
 
 	<scm>
@@ -57,56 +47,9 @@
 	<dependencies>
 		<dependency>
 			<groupId>se.uu.ub.cora</groupId>
-			<artifactId>log4j</artifactId>
-			<version>${coralog4j.version}</version>
-			<scope>compile</scope>
-		</dependency>
-		<dependency>
-			<groupId>se.uu.ub.cora</groupId>
-			<artifactId>storage</artifactId>
-			<version>${storage.version}</version>
-			<scope>compile</scope>
-		</dependency>
-		<dependency>
-			<groupId>se.uu.ub.cora</groupId>
-			<artifactId>searchstorage</artifactId>
-			<version>${searchstorage.version}</version>
-			<scope>compile</scope>
-		</dependency>
-		<dependency>
-			<groupId>se.uu.ub.cora</groupId>
-			<artifactId>gatekeeper</artifactId>
-			<version>${gatekeeper.version}</version>
-			<scope>compile</scope>
-		</dependency>
-		<dependency>
-			<groupId>se.uu.ub.cora</groupId>
-			<artifactId>gatekeeperserver</artifactId>
-			<version>${gatekeeperserver.version}</version>
+			<artifactId>systemone-gatekeeper-war</artifactId>
+			<version>${systemonegatekeeperwar.version}</version>
 			<type>war</type>
-			<scope>compile</scope>
-		</dependency>
-		<dependency>
-			<groupId>se.uu.ub.cora</groupId>
-			<artifactId>userpicker</artifactId>
-			<version>${userpicker.version}</version>
-			<scope>compile</scope>
-		</dependency>
-		<dependency>
-			<groupId>se.uu.ub.cora</groupId>
-			<artifactId>basicstorage</artifactId>
-			<version>${basicstorage.version}</version>
-			<scope>compile</scope>
-		</dependency>
-		<dependency>
-			<groupId>se.uu.ub.cora</groupId>
-			<artifactId>coradata</artifactId>
-			<version>${coradata.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>se.uu.ub.cora</groupId>
-			<artifactId>basicdata</artifactId>
-			<version>${basicdata.version}</version>
 		</dependency>
 	</dependencies>
 
