@@ -34,7 +34,7 @@
 
 	<properties>
 		<outputDirectory>${project.build.directory}/docker2</outputDirectory>
-		<systemonegatekeeperwar.version>1.0.0</systemonegatekeeperwar.version>
+		<systemonegatekeeperwar.version>1.2-SNAPSHOT</systemonegatekeeperwar.version>
 	</properties>
 
 	<scm>
