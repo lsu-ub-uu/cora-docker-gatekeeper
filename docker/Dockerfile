@@ -1,9 +1,9 @@
-FROM tomcat:9.0.37-jdk14-openjdk-buster
+ARG CORA_DOCKER_VERSION
+FROM cora-docker-tomcat:${CORA_DOCKER_VERSION}
 
 COPY /systemone-gatekeeper-war*.war /usr/local/tomcat/webapps/gatekeeperserver.war
 COPY /gatekeeperserver.xml /usr/local/tomcat/conf/Catalina/localhost/gatekeeperserver.xml
 
-COPY /*.properties /usr/local/tomcat/lib/
 
 #build with:
 #maven build
