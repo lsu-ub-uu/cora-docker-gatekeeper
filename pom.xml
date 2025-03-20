@@ -36,7 +36,7 @@
 		<outputDirectory>${project.build.directory}/docker2</outputDirectory>
 		<exec-maven-plugin.version>3.5.0</exec-maven-plugin.version>
 		<cora-docker-tomcat.version>2.4.0</cora-docker-tomcat.version>
-		<systemonegatekeeperwar.version>2.25-SNAPSHOT</systemonegatekeeperwar.version>
+		<systemonegatekeeperwar.version>2.26-SNAPSHOT</systemonegatekeeperwar.version>
 	</properties>
 
 	<scm>
