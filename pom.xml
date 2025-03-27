@@ -33,8 +33,7 @@
 	<name>Gatekeeper docker</name>
 
 	<properties>
-		<exec-maven-plugin.version>3.5.0</exec-maven-plugin.version>
-		<cora-docker-tomcat.version>2.4.0</cora-docker-tomcat.version>
+		<cora-docker-tomcat.version>2.5.0</cora-docker-tomcat.version>
 		<systemonegatekeeperwar.version>2.27-SNAPSHOT</systemonegatekeeperwar.version>
 		<!-- Override property so docker-build profile activates in this module -->
 		<docker.build.activate>true</docker.build.activate>
@@ -81,6 +80,32 @@
 							<overWriteReleases>true</overWriteReleases>
 							<overWriteSnapshots>true</overWriteSnapshots>
 							<overWriteIfNewer>true</overWriteIfNewer>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>${exec-maven-plugin.version}</version>
+				<executions>
+					<execution>
+						<id>docker-build</id>
+						<phase>install</phase>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>docker</executable>
+							<workingDirectory>${outputDirectory}</workingDirectory>
+							<arguments>
+								<argument>build</argument>
+								<argument>-t</argument>
+								<argument>systemone-docker-gatekeeper:${project.version}</argument>
+								<argument>--build-arg</argument>
+								<argument>CORA_DOCKER_VERSION=${cora-docker-tomcat.version}</argument>
+								<argument>.</argument>
+							</arguments>
 						</configuration>
 					</execution>
 				</executions>
