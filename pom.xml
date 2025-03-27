@@ -24,7 +24,7 @@
 	<parent>
 		<groupId>se.uu.ub.cora</groupId>
 		<artifactId>cora-parent-docker</artifactId>
-		<version>1.0.0</version>
+		<version>1.1.0</version>
 	</parent>
 
 	<artifactId>cora-docker-gatekeeper</artifactId>
@@ -37,6 +37,7 @@
 		<systemonegatekeeperwar.version>2.27-SNAPSHOT</systemonegatekeeperwar.version>
 		<!-- Override property so docker-build profile activates in this module -->
 		<docker.build.activate>true</docker.build.activate>
+		<dockerNameAndVersion>systemone-docker-gatekeeper:${project.version}</dockerNameAndVersion>
 	</properties>
 
 	<scm>
@@ -101,7 +102,7 @@
 							<arguments>
 								<argument>build</argument>
 								<argument>-t</argument>
-								<argument>systemone-docker-gatekeeper:${project.version}</argument>
+								<argument>${dockerNameAndVersion}</argument>
 								<argument>--build-arg</argument>
 								<argument>CORA_DOCKER_VERSION=${cora-docker-tomcat.version}</argument>
 								<argument>.</argument>
