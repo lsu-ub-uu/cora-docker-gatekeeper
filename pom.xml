@@ -37,7 +37,7 @@
 		<systemonegatekeeperwar.version>2.30-SNAPSHOT</systemonegatekeeperwar.version>
 		<!-- Override property so docker-build profile activates in this module -->
 		<docker.build.activate>true</docker.build.activate>
-		<dockerNameAndVersion>systemone-docker-gatekeeper:${project.version}</dockerNameAndVersion>
+<!--	<dockerNameAndVersion>systemone-docker-gatekeeper:${project.version}</dockerNameAndVersion>-->
 	</properties>
 
 	<scm>
