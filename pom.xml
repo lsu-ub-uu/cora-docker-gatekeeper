@@ -27,7 +27,7 @@
 
 	<artifactId>cora-docker-gatekeeper</artifactId>
 	<packaging>pom</packaging>
-	<version>1.2.0-SNAPSHOT</version>
+	<version>1.2.0</version>
 	<name>Gatekeeper docker</name>
 
 	<properties>
@@ -42,7 +42,7 @@
 		<connection>scm:git:https://github.com/lsu-ub-uu/cora-docker-gatekeeper.git</connection>
 		<developerConnection>scm:git:https://github.com/lsu-ub-uu/cora-docker-gatekeeper.git</developerConnection>
 		<url>https://github.com/lsu-ub-uu/cora-docker-gatekeeper.git</url>
-		<tag>release/1.2</tag>
+		<tag>cora-docker-gatekeeper-1.2.0</tag>
 	</scm>
 
 	<dependencies>
